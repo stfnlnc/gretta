@@ -51,7 +51,11 @@
         line-height: 120%; /* 4.5rem */
         letter-spacing: -0.15rem;
     }
-
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 3rem;
+        }
+    }
     h3 {
         font-size: 3.125rem;
         font-style: normal;

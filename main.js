@@ -1,4 +1,5 @@
 import './src/output.css'
+import './src/js/text-scroll.js'
 import gsap from 'gsap'
 import { ScrollSmoother, ScrollTrigger } from 'gsap/all'
 
