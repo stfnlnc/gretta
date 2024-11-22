@@ -3,28 +3,136 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/public/images/favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex">
     <title>Gretta</title>
 </head>
 
 <body>
-    <section class="flex flex-col gap-2 p-5">
-        <h1>Heading</h1>
-        <div class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit
-            voluptate, iure
-            earum
-            perferendis quae,
-            debitis ratione animi delectus saepe eius fugiat quasi veritatis ad nesciunt dolorum rem ullam in!</div>
-        <a href="" class="button button-sm">Button</a>
-        <a href="" class="button">Button</a>
-        <a href="" class="button button-lg">Button</a>
-        <div class="flex flex-col gap-2 p-4 bg-zinc-800">
-            <a href="" class="button button-sm button-light">Button</a>
-            <a href="" class="button button-light">Button</a>
-            <a href="" class="button button-lg button-light">Button</a>
+    <div class="z-50 fixed bottom-0 left-0 w-full h-[5.5rem] bg-white border-y border-y-black py-spacing-4 text-m">
+        <div id="infinite-to-right"
+            class="absolute right-0 flex flex-row justify-start gap-1 top-spacing-4 whitespace-nowrap">
+            <div class="div-to-right">
+                / hello@gretta.com / du
+                lundi au
+                vendredi - de 9h à 18h /
+                125 rue Cambon, Paris
+                1er / Paris et
+                partout
+                ailleurs
+            </div>
         </div>
-    </section>
+        <div id="infinite-to-left"
+            class="absolute left-0 flex flex-row justify-start gap-1 bottom-spacing-4 whitespace-nowrap">
+            <div class="div-to-left">
+                / hello@gretta.com / du
+                lundi au
+                vendredi - de 9h à 18h /
+                125 rue Cambon, Paris
+                1er / Paris et
+                partout
+                ailleurs
+            </div>
+        </div>
+    </div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section class="relative">
+                <div
+                    class="absolute top-0 left-0 flex flex-row items-center justify-between w-full md:px-spacing-14 px-spacing-6 py-spacing-7">
+                    <img class="w-40" src="/images/logo/logo.svg" alt="">
+                    <div class="flex-row hidden text-white lg:flex gap-spacing-12 text-m">
+                        <div class="flex flex-col gap-1 group">
+                            <a href="">Process</a>
+                            <span
+                                class="transition-all duration-300 border-t-2 border-white max-w-0 group-hover:max-w-full"></span>
+                        </div>
+                        <div class="flex flex-col gap-1 group">
+                            <a href="">Projets</a>
+                            <span
+                                class="transition-all duration-300 border-t-2 border-white max-w-0 group-hover:max-w-full"></span>
+                        </div>
+                        <div class="flex flex-col gap-1 group">
+                            <a href="">Équipe</a>
+                            <span
+                                class="transition-all duration-300 border-t-2 border-white max-w-0 group-hover:max-w-full"></span>
+                        </div>
+                        <div class="flex flex-col gap-1 group">
+                            <a href="">À propos</a>
+                            <span
+                                class="transition-all duration-300 border-t-2 border-white max-w-0 group-hover:max-w-full"></span>
+                        </div>
+                    </div>
+                    <a href="" class="hidden button button-sm button-light lg:block">Contact</a>
+                    <div id="menu-burger" class="block lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 7.25C3 6.83579 3.33579 6.5 3.75 6.5H20.25C20.6642 6.5 21 6.83579 21 7.25C21 7.66421 20.6642 8 20.25 8H3.75C3.33579 8 3 7.66421 3 7.25ZM3 12.5C3 12.0858 3.33579 11.75 3.75 11.75H20.25C20.6642 11.75 21 12.0858 21 12.5C21 12.9142 20.6642 13.25 20.25 13.25H3.75C3.33579 13.25 3 12.9142 3 12.5ZM3 17.75C3 17.3358 3.33579 17 3.75 17H20.25C20.6642 17 21 17.3358 21 17.75C21 18.1642 20.6642 18.5 20.25 18.5H3.75C3.33579 18.5 3 18.1642 3 17.75Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <img class="object-cover object-center w-full h-screen" src="/images/gretta/hero.png" loading="lazy"
+                    alt="Photo Architecture">
+                <div class="absolute left-0 z-50 md:px-spacing-14 px-spacing-6 bottom-28">
+                    <p class="w-full text-white md:w-1/2 mb-spacing-10">
+                        Les architectes conçoivent des espaces agréables à vivre, en harmonie avec leur environnement.
+                        Nous adoptons une approche plus personnelle, en nous concentrant sur les petits espaces : tiny
+                        houses, appartements compacts en ville ou refuges en pleine nature.
+                    </p>
+                    <div class="block xl:hidden">
+                        <img class="w-full md:w-3/4" src="/images/logo/logo-mobile.svg" alt="">
+                    </div>
+                    <div class="flex-row items-start justify-start hidden w-full gap-4 xl:flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="141" height="166" viewBox="0 0 141 166"
+                            fill="none">
+                            <path
+                                d="M114.553 53.2611C113.028 48.4749 110.977 44.1883 108.4 40.4014C105.875 36.5619 102.851 33.301 99.327 30.6186C95.8031 27.8837 91.7795 25.8061 87.2563 24.386C82.7856 22.966 77.8679 22.2559 72.5032 22.2559C63.4041 22.2559 55.1992 24.5964 47.8884 29.2774C40.5776 33.9585 34.7921 40.8222 30.5318 49.8687C26.3241 58.8625 24.2203 69.8813 24.2203 82.9251C24.2203 96.0214 26.3504 107.093 30.6107 116.139C34.871 125.186 40.7091 132.049 48.1251 136.73C55.5411 141.411 63.9827 143.752 73.4499 143.752C82.2334 143.752 89.8861 141.964 96.4079 138.387C102.982 134.811 108.058 129.762 111.634 123.24C115.263 116.665 117.078 108.934 117.078 100.045L123.39 101.228H77.1579V81.1105H140.667V99.4927C140.667 113.062 137.774 124.844 131.989 134.837C126.256 144.778 118.314 152.457 108.163 157.874C98.0647 163.291 86.4936 166 73.4499 166C58.8283 166 45.9949 162.634 34.9498 155.902C23.9573 149.169 15.3842 139.623 9.23055 127.263C3.07685 114.851 0 100.124 0 83.0828C0 70.1969 1.78825 58.6258 5.36476 48.3697C8.94127 38.1135 13.9642 29.4089 20.4334 22.2559C26.9553 15.0503 34.608 9.55406 43.3915 5.76717C52.2275 1.92768 61.8788 0.00793457 72.3454 0.00793457C81.0763 0.00793457 89.2023 1.29653 96.7235 3.87371C104.297 6.4509 111.03 10.1063 116.92 14.8399C122.864 19.5735 127.781 25.2013 131.673 31.7231C135.565 38.1924 138.195 45.3717 139.563 53.2611H114.553Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="121" height="162" viewBox="0 0 121 162"
+                            fill="none">
+                            <path
+                                d="M0.726562 161.791V0.217041H58.3189C70.8366 0.217041 81.2243 2.37347 89.4818 6.68631C97.7919 10.9992 103.998 16.9688 108.101 24.5951C112.203 32.1689 114.254 40.9261 114.254 50.8667C114.254 60.7547 112.177 69.4593 108.022 76.9805C103.919 84.449 97.713 90.2609 89.4029 94.4159C81.1454 98.571 70.7577 100.649 58.24 100.649H14.6118V79.6628H56.0309C63.9203 79.6628 70.337 78.532 75.281 76.2704C80.2776 74.0088 83.933 70.7216 86.2472 66.4087C88.5614 62.0959 89.7185 56.9152 89.7185 50.8667C89.7185 44.7656 88.5351 39.4797 86.1683 35.0091C83.854 30.5385 80.1987 27.1197 75.2021 24.7529C70.2581 22.3335 63.7625 21.1238 55.7154 21.1238H25.1047V161.791H0.726562ZM80.4879 88.8934L120.408 161.791H92.6375L53.5063 88.8934H80.4879Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="103" height="162" viewBox="0 0 103 162"
+                            fill="none">
+                            <path
+                                d="M0.0316162 161.791V0.217041H101.331V21.2027H24.4097V70.4323H96.0451V91.3391H24.4097V140.805H102.278V161.791H0.0316162Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="126" height="162" viewBox="0 0 126 162"
+                            fill="none">
+                            <path
+                                d="M0.0394287 21.2027V0.217041H125.086V21.2027H74.6727V161.791H50.3735V21.2027H0.0394287Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="126" height="162" viewBox="0 0 126 162"
+                            fill="none">
+                            <path
+                                d="M0.0394287 21.2027V0.217041H125.086V21.2027H74.6727V161.791H50.3735V21.2027H0.0394287Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="145" height="162" viewBox="0 0 145 162"
+                            fill="none">
+                            <path
+                                d="M26.2118 161.791H0.334717L58.4793 0.217041H86.6443L144.789 161.791H118.912L73.2324 29.5654H71.9701L26.2118 161.791ZM30.551 98.5184H114.494V119.031H30.551V98.5184Z"
+                                fill="white" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="127" height="127" viewBox="0 0 127 127"
+                            fill="none">
+                            <path
+                                d="M41.5581 91.5245V33.301H70.6699C73.51 33.301 76.3502 34.0111 79.1904 35.4311C82.0831 36.7986 84.4762 38.9025 86.3697 41.7426C88.3157 44.5302 89.2887 48.0015 89.2887 52.1566C89.2887 56.3642 88.2894 59.9407 86.2908 62.8861C84.2922 65.8315 81.7938 68.0668 78.7959 69.592C75.7979 71.1173 72.8 71.88 69.802 71.88H49.1319V61.8605H66.1729C68.0664 61.8605 69.9335 61.0452 71.7744 59.4148C73.6678 57.7843 74.6145 55.3649 74.6145 52.1566C74.6145 48.7904 73.6678 46.4762 71.7744 45.2139C69.9335 43.9516 68.1453 43.3205 66.4096 43.3205H55.1278V91.5245H41.5581ZM77.3758 64.2273L91.4978 91.5245H76.5869L63.0172 64.2273H77.3758ZM63.885 126.238C55.1541 126.238 46.9755 124.607 39.3491 121.346C31.7227 118.085 25.0168 113.562 19.2312 107.777C13.4457 101.991 8.9225 95.285 5.66157 87.6587C2.40063 80.0323 0.770142 71.8537 0.770142 63.1228C0.770142 54.3919 2.40063 46.2133 5.66157 38.5869C8.9225 30.9605 13.4457 24.2546 19.2312 18.469C25.0168 12.6835 31.7227 8.16027 39.3491 4.89934C46.9755 1.6384 55.1541 0.00793457 63.885 0.00793457C72.6159 0.00793457 80.7945 1.6384 88.4209 4.89934C96.0472 8.16027 102.753 12.6835 108.539 18.469C114.324 24.2546 118.848 30.9605 122.108 38.5869C125.369 46.2133 127 54.3919 127 63.1228C127 71.8537 125.369 80.0323 122.108 87.6587C118.848 95.285 114.324 101.991 108.539 107.777C102.753 113.562 96.0472 118.085 88.4209 121.346C80.7945 124.607 72.6159 126.238 63.885 126.238ZM63.885 110.617C72.6159 110.617 80.5578 108.487 87.7108 104.226C94.9165 99.9135 100.649 94.1805 104.91 87.0275C109.17 79.8219 111.3 71.8537 111.3 63.1228C111.3 54.3919 109.17 46.4499 104.91 39.2969C100.649 32.0913 94.9165 26.3584 87.7108 22.0981C80.5578 17.7853 72.6159 15.6289 63.885 15.6289C55.1541 15.6289 47.1859 17.7853 39.9802 22.0981C32.7746 26.3584 27.0417 32.0913 22.7815 39.2969C18.5212 46.4499 16.3911 54.3919 16.3911 63.1228C16.3911 71.8537 18.5212 79.8219 22.7815 87.0275C27.0417 94.1805 32.7746 99.9135 39.9802 104.226C47.1859 108.487 55.1541 110.617 63.885 110.617Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="w-full h-screen bg-white"></section>
+        </div>
+    </div>
     <script type="module" src="/main.js"></script>
 </body>
 
