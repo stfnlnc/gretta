@@ -92,4 +92,17 @@
         line-height: 140%; /* 1.75rem */
         letter-spacing: -0.05rem;
     }
+
+    .button {
+        @apply text-black transition-colors duration-300 bg-transparent border border-black rounded-none px-spacing-8 py-spacing-4 hover:text-white hover:bg-black w-fit focus:outline-none focus:ring-brand-flush-orange-500 focus:ring-[3px];
+    }
+    .button-sm {
+        @apply px-spacing-7 py-spacing-3;
+    }
+    .button-lg {
+        @apply px-spacing-10 py-spacing-5;
+    }
+    .button-light {
+        @apply text-white bg-transparent border border-white hover:text-black hover:bg-white;
+    }
 }
