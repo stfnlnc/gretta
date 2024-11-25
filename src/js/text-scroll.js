@@ -12,8 +12,8 @@ highlightLines.lines.forEach((line) => {
         color: 'black',
         scrollTrigger: {
             trigger: line,
-            start: 'top 50%',
-            end: 'bottom 50%',
+            start: 'top 75%',
+            end: 'bottom 75%',
             scrub: 1,
             markers: false,
         },
