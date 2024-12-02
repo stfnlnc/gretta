@@ -72,3 +72,14 @@ tlLeft.to(infiniteToLeft, {
     duration: (window.innerWidth / divToLeft.offsetWidth) * 18,
     ease: 'linear',
 })
+
+const footer = document.querySelector('footer')
+const infinite = document.getElementById('infinite')
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > footer.offsetTop - footer.clientHeight) {
+        infinite.style.bottom = '-20%'
+    } else {
+        infinite.style.bottom = '0'
+    }
+})

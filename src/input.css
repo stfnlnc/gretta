@@ -25,17 +25,28 @@
         letter-spacing: -0.05rem;
     }
 
+    .full {
+        height: calc(100dvh - 5.5rem);
+    }
+
     h1,
     h2,
     h3,
     h4,
     h5,
-    h6 {
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
         font-family: 'Inter', sans-serif;
         margin-top: 0;
     }
 
-    h1 {
+    h1,
+    .h1 {
         font-size: 4.5rem;
         font-style: normal;
         font-weight: 500;
@@ -43,19 +54,33 @@
         letter-spacing: -0.18rem;
     }
 
-    h2 {
+    @media screen and (max-width: 768px) {
+        h1,
+        .h1 {
+            font-size: 3.5625rem;
+            letter-spacing: -0.1425rem;
+        }
+    }
+
+    h2,
+    .h2 {
         font-size: 3.75rem;
         font-style: normal;
         font-weight: 500;
         line-height: 120%; /* 4.5rem */
         letter-spacing: -0.15rem;
     }
+
     @media screen and (max-width: 768px) {
-        h2 {
+        h2,
+        .h2 {
             font-size: 3rem;
+            letter-spacing: -0.12rem;
         }
     }
-    h3 {
+
+    h3,
+    .h3 {
         font-size: 3.125rem;
         font-style: normal;
         font-weight: 500;
@@ -63,7 +88,16 @@
         letter-spacing: -0.125rem;
     }
 
-    h4 {
+    @media screen and (max-width: 768px) {
+        h3,
+        .h3 {
+            font-size: 2.5rem;
+            letter-spacing: -0.1rem;
+        }
+    }
+
+    h4,
+    .h4 {
         font-size: 2.5625rem;
         font-style: normal;
         font-weight: 500;
@@ -71,7 +105,16 @@
         letter-spacing: -0.1025rem;
     }
 
-    h5 {
+    @media screen and (max-width: 768px) {
+        h4,
+        .h4 {
+            font-size: 2.0625rem;
+            letter-spacing: -0.0825rem;
+        }
+    }
+
+    h5,
+    .h5 {
         font-size: 2.1875rem;
         font-style: normal;
         font-weight: 500;
@@ -79,7 +122,16 @@
         letter-spacing: -0.0875rem;
     }
 
-    h6 {
+    @media screen and (max-width: 768px) {
+        h5,
+        .h5 {
+            font-size: 1.75rem;
+            letter-spacing: -0.07rem;
+        }
+    }
+
+    h6,
+    .h6 {
         font-size: 1.1875rem;
         font-style: normal;
         font-weight: 500;
@@ -88,7 +140,7 @@
     }
 
     p {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 500;
@@ -99,12 +151,15 @@
     .button {
         @apply text-black transition-colors duration-300 bg-transparent border border-black rounded-none px-spacing-8 py-spacing-4 hover:text-white hover:bg-black w-fit focus:outline-none focus:ring-brand-flush-orange-500 focus:ring-[3px];
     }
+
     .button-sm {
         @apply px-spacing-7 py-spacing-3;
     }
+
     .button-lg {
         @apply px-spacing-10 py-spacing-5;
     }
+
     .button-light {
         @apply text-white bg-transparent border border-white hover:text-black hover:bg-white;
     }
